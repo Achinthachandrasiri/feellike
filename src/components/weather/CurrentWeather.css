@@ -1,0 +1,225 @@
+.weather {
+    position:absolute; /* Ensure the ::before element is positioned relative to .weather */
+    width: 100%;
+    top: 0;
+    border-radius: 5px;
+    box-shadow: 10px -2px 30px 2px rgb(0 0 0 /6%);
+    color: white;
+    background: linear-gradient(to bottom, #066f7b, rgba(11, 119, 120, 0.6));
+    margin:0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden; 
+}
+
+.weather::before {
+    content: ''; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit; 
+    z-index: 0; 
+    pointer-events: none;
+    
+}
+.wrap{
+    width:48.5%;
+    margin: 0 ;
+    margin-top: 4.5%;
+    margin-left:25%;
+    margin-right: 25%;
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    border-radius:10px; 
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.6); 
+}
+.Heading{
+    z-index: 1;
+}
+.tit{
+    z-index: 1;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+.top{
+    z-index: 1;
+}
+.wether-icon{
+    width: 120px;
+    height: 120px;
+    z-index: 1;
+}
+.city{
+    font-weight:bold;
+    font-size:3vw;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 1px;
+    padding: 5px 0px 5px 0px;
+    z-index: 2;
+}
+.description{
+    font-weight:bold;
+    padding: 3px;
+    font-size:1.5vw;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+.image{
+    z-index: 1;
+}
+.temp{
+    font-weight:bold;
+    font-size:4vw;
+    line-height: 1;
+    margin: 0;
+    letter-spacing: 1px;
+    z-index: 1;
+}
+.DetailDiv {
+    border-radius:10px; 
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7); 
+    width:48.5%;
+    margin: 0.68% 25% 0% 25%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    align-items: center;
+}
+
+.detailSec {
+    justify-content: space-between;
+    align-self: center;
+    text-align: left; 
+    z-index: 1;
+}
+
+.detail {
+    font-size: 1.2vw;
+    margin: 5px 0px 5px 0px;
+    line-height: 1;
+    letter-spacing: 1px;
+    z-index: 1;
+    font-weight: bold;
+}
+@media only screen and (max-width: 480px) {
+    .weather {
+        position:absolute; /* Ensure the ::before element is positioned relative to .weather */
+        width: 100%;
+        top: 0;
+        border-radius: 5px;
+        box-shadow: 10px -2px 30px 2px rgb(0 0 0 /6%);
+        color: white;
+        background: linear-gradient(to bottom, #066f7b, rgba(11, 119, 120, 0.6));
+        margin:0;
+        width: 100vw;
+        height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        overflow: hidden; 
+    }
+    
+    .weather::before {
+        content: ''; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-radius: inherit; 
+        z-index: 0; 
+        pointer-events: none;
+        
+    }
+    .wrap{
+        width:82.5%;
+        margin-top: 16%;
+        margin-left:4.8%;
+        margin-right: 5%;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+        border-radius:10px; 
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.9); 
+    }
+    .Heading{
+        z-index: 1;
+    }
+    .top{
+        z-index: 1;
+    }
+    .wether-icon{
+        width: 120px;
+        height: 120px;
+        z-index: 1;
+    }
+    .city{
+        font-weight:bold;
+        font-size:5vw;
+        line-height: 1;
+        margin: 0;
+        letter-spacing: 1px;
+        padding: 5px 0px 5px 0px;
+        z-index: 2;
+    }
+    .description{
+        font-weight:bold;
+        padding: 3px;
+        font-size:3vw;
+        line-height: 1;
+        margin: 0;
+        letter-spacing: 1px;
+        z-index: 1;
+    }
+    .temp{
+        font-weight:bold;
+        font-size:8vw;
+        line-height: 1;
+        margin: 0;
+        letter-spacing: 1px;
+        z-index: 1;
+    }
+    .DetailDiv {
+        border-radius:10px; 
+        padding: 15px;
+        background-color: rgba(255, 255, 255, 0.7); 
+        width:82.5%;
+        margin: 2% 4.8% 0% 4.8%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+        align-items: center;
+    }
+    
+    .detailSec {
+        justify-content: space-between;
+        align-self: center;
+        text-align: left; 
+        z-index: 1;
+    }
+    
+    .detail {
+        font-size: 3vw;
+        margin: 5px 0px 5px 0px;
+        line-height: 1;
+        letter-spacing: 1px;
+        z-index: 1;
+        font-weight: bold;
+    }
+
+}
